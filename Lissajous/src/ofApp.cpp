@@ -6,15 +6,17 @@ void ofApp::setup(){
     
     int bufferSize = 1024;
 
-    mix.assign(bufferSize, 0.0);
     left.assign(bufferSize, 0.0);
     right.assign(bufferSize, 0.0);
     
     ofSoundStreamSettings settings;
     
-    auto devices = soundStream.getMatchingDevices("Existential Audio Inc.: BlackHole 2ch");
+    //auto devices = soundStream.getMatchingDevices("MOTU, Inc: M4");
     
+    auto devices = soundStream.getMatchingDevices("Existential Audio Inc.: BlackHole 2ch");
     //auto devices = soundStream.getMatchingDevices("Apple Inc.: MacBook Air Microphone");
+    
+    
     
     if(!devices.empty()){
         settings.setInDevice(devices[0]);
@@ -49,32 +51,10 @@ float ofApp::delay(float in){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    //fbo.begin();
-    
-    //frameCount++;
-    //if(frameCount >20)
-      //  return;
-    
-    //ofClear(10, 10);
     line.clear();
-    
-    //if (line.size() > 20){
-    //    line.getVertices().erase(
-    //                            line.getVertices().begin()
-    //                            );
-    //}
-    
-
     
     int displayWidth = ofGetWindowWidth();
     int displayHeight = ofGetWindowHeight();
-    
-    //ofEnableBlendMode(OF_BLENDMODE_SUBTRACT);
-    //            //ofSetColor(1);
-    //            ofSetRectMode(OF_RECTMODE_CORNER);
-    //            ofFill();
-    //            ofDrawRectangle(0, 0, displayWidth, displayHeight);
-    //            ofDisableBlendMode();
     
     ofFill();
     ofSetColor(0,0,0, 15);
@@ -82,21 +62,12 @@ void ofApp::draw(){
     
     ofSetColor(255,255,255, 255);
     
-    
-    
-    for (unsigned int i = 0; i < mix.size(); i++)
+    for (unsigned int i = 0; i < left.size(); i++)
     {
         line.lineTo(displayWidth/2 + left[i]*(displayWidth), displayHeight/2 + delayed[i]*(displayHeight));
-        
-        //if(mix[i]<0.1 || rightDelayed[i]<0.1)
-        //    continue;
-        //ofDrawLine(displayWidth/2 + mix[i]*(displayWidth), displayHeight/2 + rightDelayed[i]*(displayHeight),displayWidth/2 + mix[i+1]*(displayWidth), displayHeight/2 + rightDelayed[i+1]*(displayHeight));
     }
     
     line.draw();
-    
-    //fbo.end();
-    //fbo.draw(0,0);
 }
 
 //--------------------------------------------------------------
@@ -105,7 +76,7 @@ void ofApp::audioIn(ofSoundBuffer & input){
     for (size_t i = 0; i < input.getNumFrames(); i++){
         left[i]=input[i*2];
         right[i]=input[i*2+1];
-        mix[i] = (input[i*2] + input[i*2+1])/3;
+        
         delayed[i] = delay(right[i]);
     }
 }
