@@ -30,12 +30,13 @@ class ofApp : public ofBaseApp{
 
         vector <float> left;
         vector <float> right;
-        vector <float> mix;
     
         int delaySize = 2205;
         float delayBuff[2205];
         float delayed[2205];
         int bufPosn = 0;
+        int numChannels;
+        int inputChannel;
     
         int frameCount=0;
 };
