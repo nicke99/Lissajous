@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D508D34156E7076531D9084 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; };
+		5751DA480CC06139AA486719 /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B8883331F398B18355DD6815 /* ofxSyphonServer.mm */; };
+		7126DE2438A8A093CAC4408C /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A6494BC02EFEE789EDFA0F /* SyphonNameboundClient.m */; };
+		7862A3D4055A3C698EAFC5A3 /* ofxSyphonServerDirectory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88825C9382DDCACF6BBE2A1D /* ofxSyphonServerDirectory.mm */; };
+		95C8E32C0EE0FC82A0005814 /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = F050A1124019E1439A0B226C /* ofxSyphonClient.mm */; };
+		E1A3FD40C8BCD507345F1126 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 /* End PBXBuildFile section */
@@ -18,12 +24,21 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4D508D34156E7076531D9084 /* Syphon.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2147FA1A33B594CF718D7BC6 /* ofxSyphon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphon.h; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/src/ofxSyphon.h; sourceTree = SOURCE_ROOT; };
+		88825C9382DDCACF6BBE2A1D /* ofxSyphonServerDirectory.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ofxSyphonServerDirectory.mm; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/src/ofxSyphonServerDirectory.mm; sourceTree = SOURCE_ROOT; };
+		9A7C80CAD0B90E79729680B6 /* ofxSyphonServer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphonServer.h; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/src/ofxSyphonServer.h; sourceTree = SOURCE_ROOT; };
+		B8883331F398B18355DD6815 /* ofxSyphonServer.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ofxSyphonServer.mm; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/src/ofxSyphonServer.mm; sourceTree = SOURCE_ROOT; };
+		D17D46EB7A710B5236F336E2 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SyphonNameboundClient.h; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
+		D58DCB2C0AEFDE6171E29540 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework; sourceTree = "<group>"; };
+		D5A6494BC02EFEE789EDFA0F /* SyphonNameboundClient.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = SyphonNameboundClient.m; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.m; sourceTree = SOURCE_ROOT; };
+		DE31A20584373D8A969AE276 /* ofxSyphonClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphonClient.h; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/src/ofxSyphonClient.h; sourceTree = SOURCE_ROOT; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../of_v0.11.2_osx_release/libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../of_v0.11.2_osx_release/libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
 		E42962AE2163EDD300A6A9E2 /* ofNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofNode.h; path = ../../of_v0.11.2_osx_release/libs/openFrameworks/3d/ofNode.h; sourceTree = SOURCE_ROOT; };
@@ -205,6 +220,8 @@
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E9A6695465E03DBCEFF74573 /* ofxSyphonServerDirectory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSyphonServerDirectory.h; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/src/ofxSyphonServerDirectory.h; sourceTree = SOURCE_ROOT; };
+		F050A1124019E1439A0B226C /* ofxSyphonClient.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ofxSyphonClient.mm; path = ../../of_v0.11.2_osx_release/addons/ofxSyphon/src/ofxSyphonClient.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,12 +229,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A3FD40C8BCD507345F1126 /* Syphon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2317994671CD76BBA16927B8 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				65F3085962B3A8825746C3C2 /* Syphon */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		398D2AD7D162CE13BF40CD4F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				821159A073ABA066739FD401 /* osx */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		49A9E39C52C2DF4DDA1E185F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2147FA1A33B594CF718D7BC6 /* ofxSyphon.h */,
+				DE31A20584373D8A969AE276 /* ofxSyphonClient.h */,
+				F050A1124019E1439A0B226C /* ofxSyphonClient.mm */,
+				9A7C80CAD0B90E79729680B6 /* ofxSyphonServer.h */,
+				B8883331F398B18355DD6815 /* ofxSyphonServer.mm */,
+				E9A6695465E03DBCEFF74573 /* ofxSyphonServerDirectory.h */,
+				88825C9382DDCACF6BBE2A1D /* ofxSyphonServerDirectory.mm */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		50EAFB5FF7C5722E7B4895C7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D17D46EB7A710B5236F336E2 /* SyphonNameboundClient.h */,
+				D5A6494BC02EFEE789EDFA0F /* SyphonNameboundClient.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		65F3085962B3A8825746C3C2 /* Syphon */ = {
+			isa = PBXGroup;
+			children = (
+				50EAFB5FF7C5722E7B4895C7 /* src */,
+				398D2AD7D162CE13BF40CD4F /* lib */,
+			);
+			name = Syphon;
+			sourceTree = "<group>";
+		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,9 +291,27 @@
 			name = local_addons;
 			sourceTree = "<group>";
 		};
+		7F3C04577424427D348B1425 /* ofxSyphon */ = {
+			isa = PBXGroup;
+			children = (
+				2317994671CD76BBA16927B8 /* libs */,
+				49A9E39C52C2DF4DDA1E185F /* src */,
+			);
+			name = ofxSyphon;
+			sourceTree = "<group>";
+		};
+		821159A073ABA066739FD401 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				D58DCB2C0AEFDE6171E29540 /* Syphon.framework */,
+			);
+			name = osx;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				7F3C04577424427D348B1425 /* ofxSyphon */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -637,6 +721,10 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				7126DE2438A8A093CAC4408C /* SyphonNameboundClient.m in Sources */,
+				95C8E32C0EE0FC82A0005814 /* ofxSyphonClient.mm in Sources */,
+				5751DA480CC06139AA486719 /* ofxSyphonServer.mm in Sources */,
+				7862A3D4055A3C698EAFC5A3 /* ofxSyphonServerDirectory.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,8 +755,16 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_CPLUSPLUSFLAGS = "-D__MACOSX_CORE__";
 				SDKROOT = macosx;
@@ -681,23 +777,38 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "APPSTORE=1";
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/src,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_CFLAGS = "-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/";
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(LIB_OF)",
+					"-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/",
+					"-framework",
+					Syphon,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -727,9 +838,17 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_CPLUSPLUSFLAGS = "-D__MACOSX_CORE__";
 				SDKROOT = macosx;
@@ -759,8 +878,16 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				OTHER_CPLUSPLUSFLAGS = "-D__MACOSX_CORE__";
 				SDKROOT = macosx;
@@ -773,23 +900,38 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/src,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_CFLAGS = "-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/";
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(LIB_OF_DEBUG)",
+					"-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/",
+					"-framework",
+					Syphon,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -802,22 +944,37 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/libs/Syphon/src,
+					../../of_v0.11.2_osx_release/addons/ofxSyphon/src,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				OTHER_CFLAGS = "-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/";
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",
 					"$(LIB_OF)",
+					"-F../../of_v0.11.2_osx_release//addons/ofxSyphon/libs/Syphon/lib/osx/",
+					"-framework",
+					Syphon,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

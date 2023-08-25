@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxSyphon.h"
 
 class ofApp : public ofBaseApp{
 
@@ -37,6 +38,8 @@ class ofApp : public ofBaseApp{
         int bufPosn = 0;
         int numChannels;
         int inputChannel;
+        int rotation =0;
     
         int frameCount=0;
+        ofxSyphonServer syphonServer;
 };

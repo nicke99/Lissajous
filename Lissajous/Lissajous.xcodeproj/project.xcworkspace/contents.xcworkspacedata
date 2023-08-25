@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/nick/Documents/OpenFrameworks/Project1/mySketch/Lissajous.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

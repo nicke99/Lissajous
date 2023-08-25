@@ -33,6 +33,7 @@ void ofApp::setup(){
     ofSetLineWidth(3);
     
     ofSetBackgroundAuto(false);
+    syphonServer.setName("Lisajous");
 }
 
 //--------------------------------------------------------------
@@ -56,7 +57,9 @@ void ofApp::draw(){
     
     int displayWidth = ofGetWindowWidth();
     int displayHeight = ofGetWindowHeight();
+    //rotation++;
     
+    //ofRotateDeg(rotation,displayWidth/2,displayHeight/2,0);
     ofFill();
     ofSetColor(0,0,0, 15);
     ofDrawRectangle(0,0,displayWidth,displayHeight);
@@ -67,6 +70,8 @@ void ofApp::draw(){
         line.lineTo(displayWidth/2 + left[i]*(displayWidth), displayHeight/2 + delayed[i]*(displayHeight));
     
     line.draw();
+    
+    syphonServer.publishScreen();
 }
 
 //--------------------------------------------------------------
